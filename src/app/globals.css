@@ -3,9 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose_50: hsl(20, 50%, 98%);
+  --rose_100: hsl(13, 31%, 94%);
+  --rose_300: hsl(14, 25%, 72%);
+  --rose_400: hsl(7, 20%, 60%);
+  --rose_500: hsl(12, 20%, 44%);
+  --rose_900: hsl(14, 65%, 9%);
+  --foreground: 0, 0, 0;
+  --background_start: 214, 219, 220;
+  --background_end: 255, 255, 255;
+  --mobile_view: 375px;
+  --desktop_view: 1440px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,9 +31,9 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--background_end))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background_start));
 }
 
 @layer utilities {
