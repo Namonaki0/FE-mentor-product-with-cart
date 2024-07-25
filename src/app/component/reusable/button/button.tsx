@@ -12,8 +12,6 @@ import styles from "../cta/cta.module.css";
  * @param {Object} props - The props for the Button component.
  * @param {string} props.currency - The currency for the Button component.
  * @param {string} props.id - The optional id for the Button component.
- * @param {function} props.onComplete - The onComplete handler for the Button component.
- * @param {function} props.onCreate - The onCreate handler for the Button component.
  * @param {string} props.orderTotal - The optional orderTotal for the Button component.
  * @returns {ReactElement} - The rendered Button component.
  */
