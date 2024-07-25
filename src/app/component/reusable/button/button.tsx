@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "./button.type.ts";
+import type { Button } from "./button.type.ts";
 import styles from "../cta/cta.module.css";
 
 /**
