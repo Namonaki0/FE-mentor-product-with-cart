@@ -1,7 +1,5 @@
-export interface Button {
+export interface ButtonType {
   currency: string;
   id?: string;
-  onComplete: () => void;
-  onCreate: () => void;
   orderTotal?: number;
 }
