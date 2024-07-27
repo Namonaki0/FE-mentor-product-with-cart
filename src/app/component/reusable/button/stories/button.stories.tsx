@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "../../button";
-import { ButtonType } from "./../button.type.ts";
+import { ButtonType } from "./../button.type";
 import { action } from "@storybook/addon-actions";
 
 const defaultArgs: ButtonType = {
