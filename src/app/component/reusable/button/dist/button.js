@@ -15,10 +15,12 @@ var react_1 = require("react");
  * @returns {ReactElement} - The rendered Button component.
  */
 var Button = function (_a) {
-    var currency = _a.currency, id = _a.id, _b = _a.orderTotal, orderTotal = _b === void 0 ? 200 : _b;
+    var currency = _a.currency, id = _a.id, _b = _a.price, price = _b === void 0 ? 200 : _b, children = _a.children;
     var _id = id || "button";
-    var value = orderTotal.toFixed(2);
+    var value = price.toFixed(2);
     return (react_1["default"].createElement("button", { id: _id, className: "button" },
+        children,
+        " - ",
         currency,
         " ",
         value));

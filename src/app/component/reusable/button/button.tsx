@@ -14,13 +14,13 @@ import type { ButtonType } from "./button.type";
  * @param {string} props.orderTotal - The optional orderTotal for the Button component.
  * @returns {ReactElement} - The rendered Button component.
  */
-const Button: React.FC<ButtonType> = ({ currency, id, orderTotal = 200 }) => {
+const Button: React.FC<ButtonType> = ({ currency, id, price = 200, children }) => {
   const _id = id || "button";
-  const value = orderTotal.toFixed(2);
+  const value = price.toFixed(2);
 
   return (
     <button id={_id} className="button">
-      {currency} {value}
+      {children} - {currency} {value}
     </button>
   );
 };

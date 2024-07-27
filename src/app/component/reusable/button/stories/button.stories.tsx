@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "../../button";
 import { ButtonType } from "./../button.type";
@@ -6,9 +7,10 @@ import { action } from "@storybook/addon-actions";
 const defaultArgs: ButtonType = {
   currency: "GBP",
   id: "button",
-  orderTotal: 200,
+  price: 200,
+  children: "Add to Cart",
 };
-const { currency, id, orderTotal } = defaultArgs;
+const { currency, id, price } = defaultArgs;
 
 const meta: Meta<typeof Button> = {
   title: "Example/Button",
@@ -25,15 +27,15 @@ const meta: Meta<typeof Button> = {
       control: "text",
       defaultValue: id,
     },
-    orderTotal: {
+    price: {
       description: "The optional order Total for the Button component.",
       control: "number",
-      defaultValue: orderTotal,
+      defaultValue: price,
     },
   },
 };
 
-export default meta;
+export default Button;
 
 type Story = StoryObj<typeof meta>;
 

@@ -1,5 +1,6 @@
 export interface ButtonType {
   currency: string;
   id?: string;
-  orderTotal?: number;
+  price?: number;
+  children: React.ReactNode;
 }

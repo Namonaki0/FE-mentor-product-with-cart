@@ -54,3 +54,4 @@ postcss*
 package-lock*
 jest.config*
 settings*
+*storybook.log
