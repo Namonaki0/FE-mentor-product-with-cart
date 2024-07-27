@@ -51,3 +51,6 @@ tailwind.config*
 postcss*
 .eslintrc*
 */images
+package-lock*
+jest.config*
+settings*

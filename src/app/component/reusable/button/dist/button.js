@@ -1,7 +1,7 @@
 "use client";
-
-import React from 'react';
-import type { ButtonType } from "./button.type";
+"use strict";
+exports.__esModule = true;
+var react_1 = require("react");
 /**
  * Button component.
  *
@@ -14,15 +14,13 @@ import type { ButtonType } from "./button.type";
  * @param {string} props.orderTotal - The optional orderTotal for the Button component.
  * @returns {ReactElement} - The rendered Button component.
  */
-const Button: React.FC<ButtonType> = ({ currency, id, orderTotal = 200 }) => {
-  const _id = id || "button";
-  const value = orderTotal.toFixed(2);
-
-  return (
-    <button id={_id} className="button">
-      {currency} {value}
-    </button>
-  );
+var Button = function (_a) {
+    var currency = _a.currency, id = _a.id, _b = _a.orderTotal, orderTotal = _b === void 0 ? 200 : _b;
+    var _id = id || "button";
+    var value = orderTotal.toFixed(2);
+    return (react_1["default"].createElement("button", { id: _id, className: "button" },
+        currency,
+        " ",
+        value));
 };
-
-export default Button;
+exports["default"] = Button;
