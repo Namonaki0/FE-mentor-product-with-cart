@@ -16,9 +16,10 @@ var button_1 = require("../../button");
 var defaultArgs = {
     currency: "GBP",
     id: "button",
-    orderTotal: 200
+    price: 200,
+    children: "Add to Cart"
 };
-var currency = defaultArgs.currency, id = defaultArgs.id, orderTotal = defaultArgs.orderTotal;
+var currency = defaultArgs.currency, id = defaultArgs.id, price = defaultArgs.price;
 var meta = {
     title: "Example/Button",
     component: button_1.Button,
@@ -34,14 +35,14 @@ var meta = {
             control: "text",
             defaultValue: id
         },
-        orderTotal: {
+        price: {
             description: "The optional order Total for the Button component.",
             control: "number",
-            defaultValue: orderTotal
+            defaultValue: price
         }
     }
 };
-exports["default"] = meta;
+exports["default"] = button_1.Button;
 exports.Default = {
     args: __assign({}, defaultArgs)
 };
